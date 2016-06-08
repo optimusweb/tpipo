@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TownPress WordPress Theme Documentation</title>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="library/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="library/css/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="library/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="library/css/style.css">
+        <!--[if lte IE 8]>
+        <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+	<!-- WRAPPER : begin -->
+	<div id="wrapper">
+
+		<!-- HEADER : begin -->
+		<header id="header">
+			<div class="header-inner">
+
+				<!-- HEADER BRANDING : begin -->
+				<div class="header-branding">
+					<h1>TownPress</h1>
+					<h2>Municipality WordPress Theme</h2>
+				</div>
+				<!-- HEADER BRANDING : end -->
+
+				<hr>
+
+				<!-- MAIN MENU : begin -->
+				<nav class="main-menu">
+					<ul>
+						<li><a href="#introduction">Introduction</a></li>
+						<li><a href="#setup">Setup</a>
+							<ul>
+								<li><a href="#setup-installation">Installation</a></li>
+								<li><a href="#setup-recommended-settings">Recommended Settings</a></li>
+								<li><a href="#setup-import">Demo Data Import</a></li>
+								<li><a href="#setup-front-page-and-posts-page">Front Page and Posts Page</a></li>
+								<li><a href="#setup-menus">Menus</a></li>
+								<li><a href="#setup-theme-options">Theme Options</a></li>
+							</ul>
+						</li>
+						<li><a href="#quick-reference">Quick Reference Guide</a></li>
+						<li><a href="#pages">Pages</a>
+							<ul>
+								<li><a href="#pages-page-builder">Page Builder</a></li>
+								<li><a href="#pages-page-settings">Page Settings</a></li>
+							</ul>
+						</li>
+						<li><a href="#sidebars">Sidebars & Widgets</a>
+							<ul>
+								<li><a href="#sidebars-bottom-panel">Bottom Panel (Footer Widgets)</a></li>
+								<li><a href="#sidebars-left-right">Left and Right Sidebars</a></li>
+							</ul>
+						</li>
+						<li><a href="#post-types">Post Types</a>
+							<ul>
+								<li><a href="#standard-post">Standard Post (News)</a></li>
+								<li><a href="#notices-etc-cpt">Notices, Events, Documents and Galleries</a></li>
+								<li><a href="#slide-cpt">Slide</a></li>
+							</ul>
+						</li>
+						<li><a href="#bbpress">Forums (bbPress)</a></li>
+						<li><a href="#custom-skin">Custom Skin</a></li>
+						<li><a href="#icons">Icons</a></li>
+						<li><a href="#howto">How To</a>
+							<ul>
+								<li><a href="#howto-update">Updating the theme</a></li>
+								<li><a href="#howto-custom-css">Custom CSS</a></li>
+								<li><a href="#howto-twitter-feed">Twitter feed widget</a></li>
+								<li><a href="#howto-mailchimp-widget">LSVR <strong>Mailchimp</strong> Subscribe widget</a></li>
+								<li><a href="#howto-activate-default-vc-elements">How to activate all default <strong>Visual Composer</strong> elements</a></li>
+								<li><a href="#howto-vc-post-types"><strong>Visual Composer</strong> in Posts, Notices, Galleries, Events and Slides</a></li>
+								<li><a href="#howto-contact-form"><strong>Contact Form</strong> template</a></li>
+								<li><a href="#howto-translate">Theme <strong>translation</strong> (localization)</a></li>
+								<li><a href="#howto-local-weather">Local Weather</a></li>
+							</ul>
+						</li>
+						<li><a href="#credits">Credits</a></li>
+					</ul>
+				</nav>
+				<!-- MAIN MENU : end -->
+
+				<hr>
+
+				<!-- HEADER INFO : begin -->
+				<div class="header-info">
+
+					<p>If you need any help concerning this theme, <a href="http://themeforest.net/item/townpress-municipality-wordpress-theme/11490395/comments">write your message to comments</a>.</p>
+					<hr>
+					<p>If you like this theme, <strong>don't forget to rate it 5*</strong> under <a href="http://themeforest.net/downloads">downloads section</a> of your profile. Thank you!</p>
+					<hr>
+					<p>You can purchase <strong>TownPress</strong> WordPress theme on <a href="http://themeforest.net/item/townpress-municipality-wordpress-theme/11490395">ThemeForest.net</a></p>
+
+				</div>
+				<!-- HEADER INFO : end -->
+
+			</div>
+		</header>
+		<!-- HEADER : end -->
+
+		<!-- CORE : begin -->
+		<div id="core">
+
+			<!-- CONTENT : begin -->
+			<div id="content">
+
+				<!-- INTRODUCTION : begin -->
+				<section id="introduction">
+
+					<h2>Introduction</h2>
+
+					<p><strong>Thank you for your purchase!</strong></p>
+					<p>This documentation will guide you through the setup of <strong>TownPress</strong> WordPress theme.
+					If you are new to WordPress, it is highly recommended to read through some
+					<a href="http://codex.wordpress.org/Getting_Started_with_WordPress">beginner tutorials</a> first.</p>
+
+					<p>If you are already loving <strong>TownPress</strong> theme, please <strong>don't forget to rate it 5*</strong>
+					under your <a href="http://themeforest.net/downloads">downloads section</a> of your profile. Thank you!</p>
+
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i>
+					Don't forget to use <strong>your browser's search functionality</strong> to search for any keyword in this documentation
+					if you have trouble finding a solution to your issue (<strong>CTRL + F</strong> or <strong>CMD + F</strong> if you are on Mac)</p>
+
+				</section>
+				<!-- INTRODUCTION : end -->
+
+				<hr class="m-large">
+
+				<!-- SETUP : begin -->
+				<section id="setup">
+
+					<h2>Setup</h2>
+
+					<!-- INSTALLATION : begin -->
+					<h3 id="setup-installation">Installation</h3>
+					<p>First step is to <strong>install the WordPress</strong>. If you need help with that, please <a href="http://codex.wordpress.org/Installing_WordPress">read this tutorial</a></p>
+					<p>Now, let's install the theme itself. First make sure that you have downloaded <strong>full package</strong> .zip file from ThemeForest.</p>
+					<p><img src="content/installation-10.jpg" alt=""></p>
+					<ol>
+						<li>Click on <strong>Download</strong> button next to purchased item</li>
+						<li>Choose <strong>All files & documentation</strong> and download the zip file. <strong>Unzip the file</strong></li>
+					</ol>
+					<hr>
+					<p><img src="content/installation-20.jpg" alt=""></p>
+					<ol>
+						<li>Enable email notifications if you want to be informed when the new update is available</li>
+						<li>If you like the theme, <strong>don't forget to rate it 5* please</strong>. Thank you!</li>
+					</ol>
+					<hr>
+					<p>When you unzip the downloaded file, you will get bunch of folders. The most important one is the <strong>THEME</strong> folder.</p>
+					<p><img src="content/installation-30.jpg" alt=""></p>
+					<ol>
+						<li><strong>THEME</strong> folder contains the installable theme .zip.</li>
+					</ol>
+					<hr>
+					<p>Now go to wp-admin of your site and let's install the theme.</p>
+					<p><img src="content/installation-40.jpg" alt=""></p>
+					<ol>
+						<li>Hover over <strong>Appearance</strong></li>
+						<li>Click on <strong>Themes</strong></li>
+					</ol>
+					<hr>
+					<p><img src="content/installation-50.jpg" alt=""></p>
+					<ol>
+						<li>Click on <strong>Add New</strong></li>
+					</ol>
+					<hr>
+					<p><img src="content/installation-60.jpg" alt=""></p>
+					<ol>
+						<li>Click on <strong>Upload Theme</strong>, choose theme .zip from <strong>THEME</strong> folder and install it</li>
+					</ol>
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i>
+					If you have problems installing your theme via admin (as described above), you can try to <a href="https://codex.wordpress.org/Using_Themes#Adding_New_Themes_Manually_.28FTP.29">install it via FTP</a></p>
+					<hr>
+					<p><strong>It is highly recommended to install the child theme as well</strong>. <a href="http://codex.wordpress.org/Child_Themes">Learn more about child themes here</a>.
+					Child theme .zip can be found in <strong>Child Theme</strong> folder. Install it in the same way as parent theme.</p>
+					<p>If you have installed both parent and child theme, let's activate the child one under <strong>Appearance / Themes</strong>.</p>
+					<p><img src="content/installation-70.jpg" alt=""></p>
+					<ol>
+						<li>Hover over child theme and click on <strong>Activate</strong></li>
+					</ol>
+					<hr>
+					<p>After activation, you will see a notification about required plugins.</p>
+					<p><img src="content/installation-80.jpg" alt=""></p>
+					<ol>
+						<li>Click on <strong>Begin installing plugins</strong></li>
+					</ol>
+					<hr>
+					<p><img src="content/installation-90.jpg" alt=""></p>
+					<ol>
+						<li>Select all plugins</li>
+						<li>Click on <strong>Bulk Actions</strong> selectbox</li>
+						<li>Choose <strong>Install</strong></li>
+						<li>Click on <strong>Apply</strong> button</li>
+					</ol>
+					<hr>
+					<p>Now go to <strong>Plugins</strong> and activate those new plugins.</p>
+					<p><img src="content/installation-100.jpg" alt=""></p>
+					<ol>
+						<li>Select new plugins</li>
+						<li>Click on <strong>Bulk Actions</strong> selectbox</li>
+						<li>Choose <strong>Activate</strong></li>
+						<li>Click on <strong>Apply</strong> button</li>
+					</ol>
+
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i>
+					If you want to use <strong>Forum</strong> functionality, you will also need <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> plugin and optionally <a href="https://wordpress.org/plugins/basic-user-avatars/">Basic User Avatars</a> plugin for easier management of user portraits.
+					<a href="#bbpress">Read more about bbPress integration</a>.
+					Also, you will probably have to <a href="https://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP">change the memory limit</a>
+					to 96 or 128 MB if you want to use <strong>bbPress</strong>.</p>
+
+					<p><strong>Installation is complete</strong>, but please, <strong>read the rest of the documentation</strong> as well!</p>
+					<!-- INSTALLATION : end -->
+
+					<hr>
+
+					<!-- RECOMMENDED SETTINGS : begin -->
+					<h3 id="setup-recommended-settings">Recommended Settings</h3>
+					<p>The following settings are optional, but <strong>highly recommended</strong> for this theme to work correctly.</p>
+					<h4 id="setup-recommended-settings-permalinks">Permalinks</h3>
+					<p>Go to <strong>Settings / Permalinks</strong> and do the following:</p>
+					<p><img src="content/recommended-settings-10.jpg" alt=""></p>
+					<ol>
+						<li>Click on <strong>Post name</strong></li>
+						<li>Save your changes</li>
+					</ol>
+					<h4 id="setup-recommended-settings-timezone">Timezone and Date & Time Settings</h3>
+					<p>It is very important to set all your basic locale settings under <strong>Settings / General</strong>. It will affect not only date
+					of your posts, but also weather and local time displayed in <strong>LSVR Locale Widget</strong>.</p>
+					<p><img src="content/recommended-settings-20.jpg" alt=""></p>
+					<ol>
+						<li>Choose your <strong>Timezone</strong></li>
+						<li>Choose correct <strong>Date format</strong></li>
+						<li>Choose correct <strong>Time format</strong></li>
+						<li>Save your changes</li>
+					</ol>
+					<h4 id="setup-recommended-settings-media">Image Sizes</h3>
+					<p>You can change sizes of your images under <strong>Settings / Media</strong>. These are recommended settings:</p>
+					<p><img src="content/image-sizes-10.jpg" alt=""></p>
+					<p>This change will affect only new images, if you've already uploaded some images, you can use <a href="https://wordpress.org/plugins/force-regenerate-thumbnails/">this plugin</a>
+					to regenerate them.</p>
+					<!-- RECOMMENDED SETTINGS : end -->
+
+					<hr>
+
+					<!-- DEMO IMPORT : begin -->
+
+					<h3 id="setup-import">Demo Data Import</h3>
+
+					<p>If you want to recreate a demo look ASAP, you may want to import the demo data.
+					Please note that <strong>demo images are NOT part of import file</strong> (<a href="#credits">read more</a>).</p>
+					<p>To import the demo data, go to <strong>Theme Options / Demo Importer</strong></p>
+					<p><img src="content/import-10.jpg" alt=""></p>
+					<ol>
+						<li>Import <strong>Content</strong> part and <strong>wait until it imports</strong></li>
+						<li>Import <strong>ThemeOptions</strong> part and <strong>wait until it imports</strong></li>
+						<li>Import <strong>Widgets</strong> part and <strong>wait until it imports</strong></li>
+					</ol>
+
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i>
+					Importing a demo content <strong>won't make your site immediately look like a demo</strong>. Please follow the rest of the documentation.</p>
+
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i>
+					<strong>All required plugins have to be installed and active</strong> when you are importing demo content</p>
+
+					<!-- DEMO IMPORT : end -->
+
+					<hr>
+
+					<!-- FRONT PAGE AND POSTS PAGE : begin -->
+					<h3 id="setup-front-page-and-posts-page">Front Page and Posts Page</h3>
+					<p>Now you need to tell WordPress which page will be used as a front page and which will handle displaying of standard posts.
+					You can do that under <strong>Settings / Reading</strong>.</p>
+					<p><img src="content/front-page-10.jpg" alt=""></p>
+					<ol>
+						<li>Choose <strong>A static page (select below)</strong></li>
+						<li>Select your <strong>Front page</strong></li>
+						<li>Select your <strong>Posts page</strong></li>
+					</ol>
+					<!-- FRONT PAGE AND POSTS PAGE : end -->
+
+					<hr>
+
+					<!-- MENUS : begin -->
+					<h3 id="setup-menus">Menus</h3>
+					<p>This theme supports two menu areas - <strong>Main Menu</strong> and <strong>Footer Menu</strong>. You can also create a separate menu for a <strong>Directory</strong> element.</p>
+					<h4 id="menus-main-menu">Main Menu</h4>
+					<p>It can be displayed either in primary (left) sidebar, secondary (right) sidebar or in header.
+					Main menu will be also used for mobile devices.</p>
+					<p>To create it, navigate to <strong>Appearance / Menus</strong>, create a new menu, add your pages and then select correct Theme location.</p>
+					<p><img src="content/menus-10.jpg" alt=""></p>
+					<ol>
+						<li>Select <strong>Main Menu</strong></li>
+						<li>Save your changes</li>
+					</ol>
+					<p>Now, if you want to display main menu <strong>in header</strong>, head to <strong>Theme Options / Header Settings</strong> and enable <strong>Header Menu</strong> option. That will enable it across all pages, but you can choose to enable it just for a specific ones. To do so, edit a page, scroll down to <strong>Page Settings</strong> and set <strong>Header Menu</strong> to <strong>Enable</strong>. If you don't want to display it in sidebar at the same time, head to <strong>Theme Options / Sidebar Settings</strong> and set <strong>Side Menu Position</strong> to <strong>Disable</strong>.</p>
+					<p>If you want to display your <strong>main menu in sidebar</strong>, navigate to <strong>Theme Option / Sidebar Settings</strong> and set <strong>Side Menu Position</strong> to either <strong>Left</strong> (recommended) or <strong>Right</strong>. You can change this setting separately for any page using its <strong><a href="#pages-page-settings">Page Settings</a></strong>.</p>
+					<h4 id="menus-footer-menu">Footer Menu</h4>
+					<p>Footer menu is displayed in Footer, on the opposite site from <strong>Footer Text</strong> (which can be edited under <strong>Theme Options / Footer Settings / Footer Text</strong>).
+					It can be created in the same way as <strong>Main Menu</strong> (above), you just need to select <strong>Footer Menu</strong> under <strong>Theme locations</strong>.</p>
+					<h4 id="menus-cpt">Adding Links to Custom Post Types - CPT (Galleries, Notices, Documents, Events)</h4>
+					<p>If you want to add a link to <strong>CPT archive page</strong> (for example list of Events), you will have to obtain its link first. Here is where you can find it:</p>
+					<h5>Notices</h5>
+					<p><strong>Theme Options / Notices / Notices URL Slug</strong> option description</p>
+					<h5>Documents</h5>
+					<p><strong>Theme Options / Documents / Documents URL Slug</strong> option description</p>
+					<h5>Events</h5>
+					<p><strong>Theme Options / Events / Events URL Slug</strong> option description</p>
+					<h5>Galleries</h5>
+					<p><strong>Theme Options / Galleries / Galleries URL Slug</strong> option description</p>
+					<p>If you have your desired link, navigate back to <strong>Appearance / Menus</strong>, choose your menu and insert your link via <strong>Custom Links</strong>.</p>
+					<p><img src="content/menus-20.jpg" alt=""></p>
+					<ol>
+						<li>Click on <strong>Custom Links</strong></li>
+						<li>Add link to URL field</li>
+						<li>Add label for this item</li>
+						<li>Insert it to your menu</li>
+					</ol>
+					<p>If you want to insert a <strong>link to a specific post</strong> (for example specific event), you will have to first enable this feature via <strong>Screen Options</strong> (in top right corner).</p>
+					<p><img src="content/menus-30.jpg" alt=""></p>
+					<ol>
+						<li>Show Notices</li>
+						<li>Show Documents</li>
+						<li>Show Events</li>
+						<li>Show Galleries</li>
+					</ol>
+					<h4 id="menus-directory">Directory Element</h4>
+					<p>If you want to use a Directory element (as in Home 1) you have to create a regular menu under <strong>Appearance / Menus</strong> first.
+					<strong>Do not</strong> check anything under <strong>Theme locations</strong>. Then navigate to your page with <strong>Directory</strong> element (e.g. Home 1),
+					edit it and assign this newly created menu to it.</p>
+					<p><img src="content/menus-40.jpg" alt=""></p>
+					<ol>
+						<li>Hover over <strong>Directory</strong> element</li>
+						<li>Edit this element</li>
+						<li>Choose your menu</li>
+						<li>Save your changes and save the page</li>
+					</ol>
+					<!-- MENUS : end -->
+
+					<hr>
+
+					<!-- THEME OPTIONS : begin -->
+					<h3 id="setup-theme-options">Theme Options</h3>
+					<p>Now it's time to take a look at <strong>Theme Options</strong>.</p>
+					<p><img src="content/theme-options-10.jpg" alt=""></p>
+					<p>There are many different settings and they all should be self-explanatory via their labels or description.
+					You should take your time and <strong>browse through all of them</strong> to learn about various customization options of this theme.</p>
+					<!-- THEME OPTIONS : end -->
+
+				</section>
+				<!-- SETUP : end -->
+
+				<hr class="m-large">
+
+				<!-- QUICK REFERENCE : begin -->
+				<section id="quick-reference">
+
+					<h2>Quick Reference</h2>
+
+					<p><a href="content/quick-reference-10.jpg" class="lightbox"><img src="content/quick-reference-10.jpg" alt=""></a></p>
+					<ol>
+						<li><strong>Header Background</strong>. Can be defined under <strong>Theme Options / Header Settings</strong> with <strong>Header Background</strong> option.
+						You can override it for a specific page with its <strong>Featured Image</strong></li>
+						<li><strong>Header Logo</strong>. Can be defined under <strong>Theme Options / Header Settings</strong> with <strong>Header Logo</strong> option</li>
+						<li><strong>Header Map</strong>. Can be enabled under <strong>Theme Options / Header Settings</strong> with <strong>Header Google Map (global)</strong>
+						option and additional options below. You can enable it just for a specific page under <strong><a href="#pages-page-settings">Page Settings</a></strong> of that page</li>
+						<li><strong>Header Login</strong>. Can be enabled under <strong>Theme Options / Forums (bbPress)</strong>. <a href="https://wordpress.org/plugins/bbpress/">bbPress</a> plugin have to by installed and active to use this feature.
+						Learn more about <strong>bbPress</strong> integration <a href="#bbpress">here</a></li>
+						<li><strong>Header Search</strong>. Can be enabled under <strong>Theme Options / Header Settings</strong> with <strong>Header Search</strong> option</li>
+						<li><strong>Page Title</strong>. This is the standard title of currently displayed page. You can disable or override it under <strong><a href="#pages-page-settings">Page Settings</a> / Content</strong> of a specific page</li>
+						<li><strong>Directory element</strong>. Can be inserted into page via <strong><a href="#pages-page-builder">Page Builder</a></strong>. Learn how to populate it with items <a href="#menus-directory">here</a></li>
+						<li><strong>Articles element</strong>. Can be inserted into page via <strong><a href="#pages-page-builder">Page Builder</a></strong></li>
+						<li><strong>Main Menu</strong>. You can learn how to create it <a href="#setup-menus">here</a></li>
+						<li><strong>Left Sidebar</strong>. You can learn more about sidebars <a href="#sidebars-left-right">here</a></li>
+						<li><strong>LSVR Documents widget</strong>. You can learn more about Documents <a href="#notices-etc-cpt">here</a> and about widgets <a href="#sidebars-left-right">here</a></li>
+						<li><strong>LSVR Locale Info widget</strong>. Settings for this widget can be edited under <strong>Theme Options / Locale</strong>. Learn more about widgets <a href="#sidebars-left-right">here</a></li>
+						<li><strong>LSVR Featured Gallery widget</strong>. You can learn more about Galleries <a href="#notices-etc-cpt">here</a> and about widgets <a href="#sidebars-left-right">here</a></li>
+						<li><strong>Right Sidebar</strong>. You can learn more about sidebars <a href="#sidebars-left-right">here</a></li>
+						<li><strong>LSVR Notices widget</strong>. You can learn more about Notices <a href="#notices-etc-cpt">here</a> and about widgets <a href="#sidebars-left-right">here</a></li>
+						<li><strong>LSVR Image widget</strong>. You can learn more about widgets <a href="#sidebars-left-right">here</a></li>
+						<li><strong>LSVR Events widget</strong>. You can learn more about Events <a href="#notices-etc-cpt">here</a> and about widgets <a href="#sidebars-left-right">here</a></li>
+						<li><strong>Footer Background</strong>. Can be defined under <strong>Theme Options / Footer Settings</strong> with <strong>Footer Background Image</strong> option</li>
+						<li><strong>Bottom Panel</strong>. You can learn more about Bottom Panel <a href="#sidebars">here</a></li>
+						<li><strong>Text widget</strong>. You can learn more about widgets <a href="#sidebars-left-right">here</a></li>
+						<li><strong>LSVR Definition List widget</strong>. You can learn more about widgets <a href="#sidebars-left-right">here</a></li>
+						<li><strong>LSVR Mailchimp Subscribe widget</strong>. Learn how to obtain a correct link for this widget <a href="#howto-mailchimp-widget">here</a>. You can learn more about widgets <a href="#sidebars-left-right">here</a></li>
+						<li><strong>Text widget</strong>. You can learn more about widgets <a href="#sidebars-left-right">here</a></li>
+						<li><strong>Social links</strong>. You can define your Social links under <strong>Theme Options / Social</strong>
+						and enable them in <strong>Footer</strong> under <strong>Theme Options / Footer Settings</strong> with <strong>Social Icons</strong> option</li>
+						<li><strong>Footer Text</strong>. Can be edited under <strong>Theme Options / Footer Settings</strong> with <strong>Footer Text</strong> option</li>
+						<li><strong>Footer Menu</strong>. You can learn how to create the Footer menu <a href="#setup-menus">here</a></li>
+					</ol>
+
+				</section>
+				<!-- QUICK REFERENCE : end -->
+
+				<hr class="m-large">
+
+				<!-- PAGES : begin -->
+				<section id="pages">
+
+					<h2>Pages</h2>
+
+					<h3 id="pages-page-builder">Page Builder</h3>
+
+					<p>This theme comes with a very powerful page builder - <a href="http://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431">Visual Composer</a>.
+					You may want to read its <a href="https://wpbakery.atlassian.net/wiki/display/VC/Visual+Composer+Pagebuilder+for+WordPress">official knowledge base</a> if you need help using it.
+					If you are already familiar with VC, you will find out that <a href="#howto-activate-default-vc-elements">not all default VC elements are available</a> with this theme.</p>
+					<p><img src="content/page-builder-10.jpg" alt=""></p>
+					<ol>
+						<li>If you don't see page builder when editing page, click on <strong>Backend Editor</strong> button.
+						If you don't see this button, <a href="#howto-vc-post-types">read this</a></li>
+					</ol>
+
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i>
+					Please note, that if you need a support specifically for Visual Composer, you will have to
+					<a href="http://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431">purchase your own (regular) license</a> to get access to its
+					<a href="http://support.wpbakery.com/">support forums</a>. This will also allow you to <strong>update this plugin</strong> on your own.</p>
+
+					<h4 id="pages-page-builder-layput-templates">Using pre-defined layout templates</h4>
+					<p>As with default VC elements, not all default predefined VC layout templates are supported. But at the other hand, there are bunch of theme-specific ones available.</p>
+					<p><img src="content/page-builder-20.jpg" alt=""></p>
+					<ol>
+						<li>Open layout templates modal</li>
+						<li>Display predefined templates</li>
+						<li>This icon indicates that this is a theme-specific template</li>
+					</ol>
+
+					<hr>
+
+					<h3 id="pages-page-settings">Page Settings</h3>
+
+					<p>Page Settings can be found under main content editor.</p>
+					<p><img src="content/page-settings-10.jpg" alt=""></p>
+
+					<p>For example, if you want to create a <strong>page without title and breadcrumbs, with elements as separate boxes</strong>, use these settings:</p>
+					<p><img src="content/page-settings-20.jpg" alt=""></p>
+					<ol>
+						<li>Switch to <strong>Content Settings</strong></li>
+						<li>Disable <strong>Page Title</strong></li>
+						<li>Disable <strong>Breadcrumbs</strong></li>
+						<li>Set <strong>Boxed Content</strong> to <strong>Separate Boxes</strong></li>
+					</ol>
+
+				</section>
+				<!-- PAGES : begin -->
+
+				<hr class="m-large">
+
+				<!-- SIDEBARS : begin -->
+				<section id="sidebars">
+
+					<h2>Sidebars & Widgets</h2>
+					<p>This theme offers you three widgetized areas - Left and Right Sidebars, and Bottom Panel (in footer).</p>
+
+					<h3 id="sidebars-bottom-panel">Bottom Panel (Footer Widgets)</h3>
+					<p>Let's start with the easier. <strong>Bottom Panel</strong> is the widgetized area at the top of the <strong>Footer</strong>.
+					It is the same for all pages. To enable it, go to <strong>Appearance / Widgets</strong>:</p>
+					<p><img src="content/bottom-panel-10.jpg" alt=""></p>
+					<ol>
+						<li>Expand <strong>Bottom Panel</strong></li>
+						<li>Choose your widgets</li>
+						<li>Drag and drop them one by one into <strong>Bottom Panel</strong></li>
+					</ol>
+					<p>You can change the number of columns for <strong>Bottom Panel</strong> under <strong>Theme Options / Footer Settings</strong> with <strong>Bottom Panel Columns</strong> option</p>
+
+					<h3 id="sidebars-left-right">Left and Right Sidebars</h3>
+
+					<p>Left and Right sidebars allows you to have a <strong>unique set of widgets with any page</strong>.
+					The whole technical side of this can seem to be a little bit complicated initially, so let's explain it via examples.</p>
+
+					<h4 id="sidebars-left-right-default">Example 1: Using default Left and Right sidebars</h4>
+					<p>Go to <strong>Appearance / Widgets</strong> and look for <strong>Default Left Sidebar</strong> and <strong>Default Right Sidebar</strong>.</p>
+					<p><img src="content/sidebars-10.jpg" alt=""></p>
+					<ol>
+						<li>Expand <strong>Default Left Sidebar</strong></li>
+						<li>Expand <strong>Default Right Sidebar</strong></li>
+						<li>Choose your widgets</li>
+						<li>Drag and drop them to sidebars</li>
+					</ol>
+					<p><strong>Default Left Sidebar</strong> will be automatically displayed in any new page you create.
+					If you want to disable it for a specific page,
+					navigate to that page's <strong>Page Settings</strong>:</p>
+					<p><img src="content/sidebars-20.jpg" alt=""></p>
+					<ol>
+						<li>Switch to <strong>Sidebars</strong></li>
+						<li>Choose <strong>Disable</strong></li>
+					</ol>
+
+					<h4 id="sidebars-left-right-custom">Example 2: Custom sidebars</h4>
+					<p>Let's say you want to create an unique sidebar for a specific page. First step is to create it under <strong>Theme Options / Sidebar Settings</strong></p>
+					<p><img src="content/sidebars-30.jpg" alt=""></p>
+					<ol>
+						<li>Go to <strong>Theme Options / Sidebar Settings</strong></li>
+						<li>Choose an <strong>unique ID</strong> for your sidebar</li>
+						<li>Give him a clear name</li>
+						<li>Add another sidebar if you want</li>
+						<li>Save your changes</li>
+					</ol>
+					<p>Next step si to navigate to <strong>Appearance / Widgets</strong> and populate your sidebar with widgets.</p>
+					<p><img src="content/sidebars-40.jpg" alt=""></p>
+					<ol>
+						<li>Expand your sidebar</li>
+						<li>Choose your widgets</li>
+						<li>Drag and drop them to your sidebar</li>
+					</ol>
+					<p>Now it's the time to assign this sidebar to a page. Open your page under <strong>Pages</strong> (or create a new)
+					and choose <strong>Sidebars</strong> under <strong>Page Settings</strong>.</p>
+					<p><img src="content/sidebars-50.jpg" alt=""></p>
+					<ol>
+						<li>Select <strong>Sidebars</strong></li>
+						<li>Assign your sidebar as either <strong>Left</strong> or <strong>Right</strong></li>
+					</ol>
+
+				</section>
+				<!-- SIDEBARS : begin -->
+
+				<hr class="m-large">
+
+				<!-- POST TYPES : begin -->
+				<section id="post-types">
+
+					<h2>Post Types</h2>
+
+					<!-- STANDARD POST : begin -->
+					<h3 id="standard-post">Standard Post (News)</h3>
+					<p>Standard posts are the core for each WordPress site. They can be used for blogging or news.
+					First thing to do when you want to use posts is to <strong>create a standard page</strong>.</p>
+					<p><img src="content/standard-post-10.jpg" alt=""></p>
+					<ol>
+						<li>Title will be used on any place where a reference to post list page is needed (page title for post list, page title for single post, breadcrumbs)</li>
+						<li>Leave content blank. Even if you add a text here, it won't be displayed anywhere</li>
+					</ol>
+					<p>You can assign sidebars to post pages under <strong>Page Settings / Sidebars</strong>.</p>
+					<p>Next step is to choose this page as <strong>Posts page</strong> under <strong>Settings / Reading</strong>.</p>
+					<p><img src="content/standard-post-20.jpg" alt=""></p>
+					<ol>
+						<li>Choose <strong>A static page (select below)</strong></li>
+						<li>Select your News page and save your changes</li>
+					</ol>
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i>Check out <strong>Theme Options / Standard Posts</strong> for additional settings</p>
+					<!-- STANDARD POST : end -->
+
+					<hr>
+
+					<!-- NOTICES, ETC : begin -->
+					<h3 id="notices-etc-cpt">Notices, Events, Documents and Galleries</h3>
+					<p>All these post types can be managed under their respective secton in wp-admin (<strong>Notices, Events, Documents, Galleries</strong>)
+					in a very similar way to standard posts. <strong>LSVR Toolkit (TownPress)</strong> plugin must be installed to use them.</p>
+					<p>First thing to do when you want to use any (or all) of these post types, is to create a separate page for each of them.
+					Let's show it on the <strong>Notices</strong>, but the <strong>process is the same for all other post types</strong>, just change word <strong>notices</strong> for <strong>events</strong>, <strong>galleries</strong> and <strong>documents</strong>.</p>
+					<p><img src="content/notices-10.jpg" alt=""></p>
+					<ol>
+						<li>Insert title</li>
+						<li>Make sure that slug is different from "notices" (for example by adding <strong>-base</strong> postfix to it)</li>
+					</ol>
+					<p>Now navigate to <strong>Theme Options / Notices</strong> and choose this page as <strong>Notices Base Page</strong>.</p>
+					<p><img src="content/notices-20.jpg" alt=""></p>
+					<ol>
+						<li>Go to <strong>Theme Options / Notices</strong></li>
+						<li>Choose your Notices page</li>
+					</ol>
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i>Feel free to examine all options under <strong>Theme Options / Notices, Documents, Events, Galleries</strong></p>
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i> You will find a <strong>link to post type listing page</strong> in the description of <strong>URL Slug</strong> option under the appropriate section of <strong>Theme Options</strong></p>
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i> Each post type above has <strong>its own widget</strong>. Take a look under <strong>Appearance / Widgets</strong></p>
+					<!-- NOTICES, ETC : end -->
+
+					<hr>
+
+					<!-- SLIDE : begin -->
+					<h3 id="slide-cpt">Slide</h3>
+					<p>Slide is a special post type for use with <strong>Slider</strong> element.
+					Slides can be managed under <strong>Slides</strong> in similar way to standard posts. <strong>LSVR Toolkit (TownPress)</strong> plugin must be installed to use this feature.</p>
+					<p>Slides can be grouped together via sliders. This works in a same way as categories for standard posts.
+					Then, when you insert a <strong>Slider</strong> element, you can insert a slug of a specific slider and only slides associated with this slider will be displayed.</p>
+					<p><strong>Featured Image</strong> will be used as slide's background (but you can also define a single background for whole slider when you insert <strong>Slider</strong> element).</p>
+					<p>Settings for single slide can be edited under <strong>Slide Settings</strong> when editing a slide.</p>
+					<!-- SLIDE : end -->
+
+				</section>
+				<!-- POST TYPES : end -->
+
+				<hr class="m-large">
+
+				<!-- BBPRESS : begin -->
+				<section id="bbpress">
+
+					<h2>Forums (bbPress)</h2>
+
+					<p>First step to do when you want to run forums on your site is to <strong>install <a href="https://wordpress.org/plugins/bbpress/">bbPress</a></strong> plugin.
+					This plugin is a huge one, so you better <a href="http://codex.bbpress.org/">read through its documentation</a> if you haven't used it before.
+					I also recommend to install <a href="https://wordpress.org/plugins/basic-user-avatars/">Basic User Avatars</a> plugin,
+					which will allow your forum members to change their profile picture very easily. Next step is to create few pages.</p>
+
+					<h3 id="bbpress-lost-password">Lost Password page</h3>
+					<p>Create a regular page under <strong>Pages / Add New</strong> and use Visual Composer to add predefined layout template.</p>
+					<p><img src="content/bbpress-10.jpg" alt=""></p>
+					<ol>
+						<li>Show layout templates</li>
+						<li>Switch to <strong>Default Templates</strong></li>
+						<li>Choose <strong>#bbPress Lost Password</strong></li>
+					</ol>
+					<p>You can customize this page under <a href="#pages-page-settings">Page Settings</a> and then save it.</p>
+
+					<h3 id="bbpress-login-register">Login / Register page</h3>
+					<p>Let's create another regular page with different predefined layout template.</p>
+					<p><img src="content/bbpress-20.jpg" alt=""></p>
+					<ol>
+						<li>Show layout templates</li>
+						<li>Switch to <strong>Default Templates</strong></li>
+						<li>Choose <strong>#bbPress Login / Register</strong></li>
+					</ol>
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i> Don't forget to edit Alert Message element and link it to your Lost Password page.</p>
+					<p>Again, you can customize this page via <a href="#pages-page-settings">Page Settings</a> and then save it.</p>
+
+					<h3 id="bbpress-forum-base">Forums Base page</h3>
+					<p>This page will be used for managing sidebars, title etc. for all your forum pages (except <strong>Login / Register</strong> and <strong>Lost Password</strong>).
+					Just create a regular page and make your changes under <strong>Page Settings</strong>.
+					Make sure that this page will have a different slug from <strong>"forums"</strong> to avoid any conflicts with default forums URL. For example, you can use <strong>"forums-base"</strong> slug for it.</p>
+					<p>Now head to <strong>Theme Options / Forums (bbPress)</strong> and choose your <strong>Base Page</strong> under <strong>Forums Base Page</strong>. </p>
+
+					<h3 id="bbpress-header-login">Header Login</h3>
+					<p>If you want to use Header Login button, then nanvigate to <strong>Theme Options / Forums (bbPress)</strong>,
+					enable <strong>Enable Header Login</strong> option and choose your <strong>Login / Register</strong> page under <strong>Login Page</strong> option.</p>
+
+					<p>That's all, you can access your forums on <strong>your-domain/forums</strong> URL. Don't forget to take a look at
+					<strong>Settings / Forums</strong> for some advanced settings.</p>
+
+				</section>
+				<!-- BBPRESS : end -->
+
+				<hr class="m-large">
+
+				<!-- CUSTOM SKIN : begin -->
+				<section id="custom-skin">
+
+					<h2>Custom Skin</h2>
+
+					<p>Creating a Custom Skin needs a little bit of work, but follow these steps and you will have it in no time:</p>
+					<ol>
+						<li>Open <a href="http://demos.volovar.net/townpress.wp/files/red.scss">this link</a> to a default theme skin .scss file</li>
+						<li>Copy all code from that link to any text editor (e.g. <a href="https://notepad-plus-plus.org/">Notepad++</a> for Windows or
+						<a href="http://brackets.io/">Brackets</a> for OSX)</li>
+						<li>Make your changes. Basically, you just need to change color for <strong>$accent</strong> variable on line 26. By default, it looks like this:<br>
+						<code>$accent: #ec5237; // primary accent color</code><br>
+						you will find a comprehensive list of colors <a href="http://www.colorhexa.com/color-names">here</a>. Just change <strong>#ec5237</strong> to your custom color.</li>
+						<li>Copy your changed code and paste it to <strong>left column</strong> on <a href="http://sassmeister.com/">sassmeister.com</a> (SCSS).</li>
+						<li>Copy generated code from <strong>right column</strong> (CSS)</li>
+						<li>Now you have two options:<br>
+						you can either paste this generated code to <strong>library/css/customskin.css</strong> file <strong>in Child Theme</strong> (recommended)<br>
+						<strong>OR</strong> paste this code under <strong>Theme Options / Styling</strong> into <strong>Custom Scheme Code</strong> field (enable <strong>Enable Custom Color Scheme</strong> option first)</li>
+						<li>In both cases, <strong>Enable Custom Color Scheme</strong> under <strong>Theme Options / Styling</strong> have to be enabled</li>
+					</ol>
+
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i>
+					If you want to learn more about SASS language, check <a href="http://sass-lang.com/">sass-lang.com</a></p>
+
+				</section>
+				<!-- CUSTOM SKIN : begin -->
+
+				<hr class="m-large">
+
+				<!-- ICONS : begin -->
+				<section id="icons">
+
+					<h2>Icons</h2>
+
+					<p>This theme uses two icon sets - <a href="http://fortawesome.github.io/Font-Awesome/icons/">FontAwesome</a>
+					and <a href="content/linearicons/linearicons.html">Linearicons</a> (implemented via <a href="https://icomoon.io/">IcoMoon</a>).</p>
+					<p>Some elements, inserted via Shortcode Generator or Page Builder, have an option for inserting icon name.
+					Choose any icon from <a href="http://fortawesome.github.io/Font-Awesome/icons/">FontAwesome library</a> (click on icon to see its class)
+					or <a href="content/linearicons/linearicons.html">Linearicon libary</a> and use its full class (with additional "fa" or "tp" respectively).</p>
+					<p>For example "<strong>fa fa-heart</strong>" or "<strong>tp tp-droplet</strong>" (without quotes).</p>
+
+				</section>
+				<!-- ICONS : begin -->
+
+				<hr class="m-large">
+
+				<!-- HOW TO : begin -->
+				<section id="howto">
+
+					<h2>How To</h2>
+
+					<h3 id="howto-update">Updating the theme</h3>
+					<p>When there is a new update, go to your <a href="http://themeforest.net/downloads">Downloads</a> on ThemeForest,
+					click on <strong>Download</strong> button next to purchased theme and choose <strong>Installable WordPress file only</strong>.
+					Now go to <strong>Appearance / Themes</strong> in wp-admin and delete <strong>parent</strong> theme. You will have to activate any other theme
+					to see an option to delete the active one. If the parent theme is deleted,
+					just install the updated one in the same way, as you did when you installed the theme for the first time.
+					Don't worry, <strong>your wp-admin settings and content won't be deleted</strong>.</p>
+
+					<hr>
+
+					<h3 id="howto-custom-css">Custom CSS</h3>
+					<p>You have two options to do that. The easier one is to add your CSS code under <strong>Theme Options / Custom CSS/JS</strong> in <strong>CSS Code</strong> field.</p>
+					<p>If you need to add more complex code, for example for different screen sizes, you should use <strong>Child Theme</strong> and edit
+					<strong>style.css</strong> file in its root.</p>
+
+					<hr>
+
+					<h3 id="howto-twitter-feed">Twitter feed widget</h3>
+					<p>Create your widget at <a href="https://twitter.com/settings/widgets">Twitter.com</a> and
+					paste generated HTML code into <strong>LSVR Custom Code widget</strong>.</p>
+
+					<hr>
+
+					<h3 id="howto-mailchimp-widget">LSVR <strong>Mailchimp</strong> Subscribe widget</h3>
+					<p>You need to have a <a href="http://mailchimp.com/">Mailchimp</a> account in order to make subscribe form work.</p>
+					<p>Log in to Mailchimp and go to desired subscribers <strong>List</strong> which you want to connect with this template.
+					Click on <strong>Signup forms</strong> and build some basic signup form. If you want to use this template's subscribe form as it is,
+					you will need just an email field (field tag EMAIL).</strong>
+					When you are done building the form, go back to <strong>Signup forms</strong> and click on <strong>Embedded forms</strong>.
+					You should see the code of your form in <strong>Copy/paste onto your site</strong> section.
+					Copy it into your text editor, but you need just form's action URL. Search for "&lt;form action="
+					and copy the whole URL. It should look similar to this: http://volovar.us8.list-manage.com/subscribe/post?u=76a50c9454ec8ab78914d1bf2&id=49e892f53d.</p>
+					<p>You need to edit it a little bit though. Replace "post?" with "post-json?" and add "&c=?" at the end.
+					You should get something similar to this:<br><strong>http://volovar.us8.list-manage.com/subscribe/post-json?u=76a50c9454ec8ab78914d1bf2&id=49e892f53d&c=?</strong></p>
+					<p>Add this URL to <strong>Mailchimp Link</strong> field in <strong>LSVR Mailchimp Subscribe</strong> widget.</p>
+
+					<hr>
+
+					<h3 id="howto-activate-default-vc-elements">How to activate all default <strong>Visual Composer</strong> elements</h3>
+					<p>If you are already familiar with <strong>Visual Composer</strong>, you will find out that not all default VC elements are available in this theme.
+					That's because they may not be 100% compatible or there are custom theme elements which substitute their functionality.</p>
+					<p>However, you can enable those hidden elements by editing <strong>visual-composer-settings.php</strong>
+					file in <strong>Includes</strong> folder (found in theme's root). Just delete any line containing <strong>vc_remove_element</strong> function.</p>
+					<p class="c-alert-message"><i class="fa fa-info-circle"></i>
+					I do not guarantee the proper functionality of those hidden elements. You are on your own when you decide to use them.</p>
+
+					<hr>
+
+					<h3 id="howto-vc-post-types">Visual Composer in Posts, Notices, Galleries, Events and Slides</h3>
+					<p>By default, Visual Composer is enabled only for <strong>Pages</strong>. To enable it for other post types as well,
+					go to <strong>Visual Composer / General Settings</strong> and check appropriate options under <strong>Content types</strong> (lsvrnotice, lsvrevent, lsvrgallery, lsvrdocument and lsvrslide).</p>
+
+					<hr>
+
+					<h3 id="howto-contact-form"><strong>Contact Form</strong> template</h3>
+					<p>Navigate to <strong>Contact</strong>, open your contact form (or create new) and add the following code to <strong>Form</strong> field:</p>
+<pre>
+[response]
+&lt;p&gt;&lt;label for="your-name"&gt;Your Name &lt;span&gt;*&lt;/span&gt;&lt;/label&gt;[text* your-name id:your-name]&lt;/p&gt;
+&lt;p&gt;&lt;label for="your-email"&gt;Your Email &lt;span&gt;*&lt;/span&gt;&lt;/label&gt;[email* your-email id:your-email]&lt;/p&gt;
+&lt;p&gt;&lt;label for="your-subject"&gt;Subject&lt;/label&gt;[text your-subject id:your-subject]&lt;/p&gt;
+&lt;p&gt;&lt;label for="your-message"&gt;Your Message&lt;/label&gt;[textarea your-message id:your-message]&lt;/p&gt;
+&lt;p&gt;[submit "Send Message"]&lt;/p&gt;
+</pre>
+
+					<hr>
+
+					<h3 id="howto-translate">Theme <strong>translation</strong> (localization)</h3>
+					<p>Easiest way to translate this theme is to use <a href="http://wpml.org/">WPML</a> plugin. If you want a free solution, please check out these articles:
+					<a href="http://codex.wordpress.org/Translating_WordPress">WordPress Codex</a>, <a href="http://premium.wpmudev.org/blog/how-to-translate-a-wordpress-theme">wpmudev.org</a></p>
+
+					<p>This theme also supports RTL languages. <strong>Rtl.css file is already part of the theme</strong> and contains required CSS definitions, but feel free to alter it if you need to.
+					More info about RTL in WordPress can be found <a href="http://codex.wordpress.org/Right-to-Left_Language_Support">here</a>.</p>
+
+					<hr>
+
+					<h3 id="howto-local-weather">Local Weather</h3>
+					<p>Setting up LSVR Locale Widget with weather info is easy. Head to <strong>Theme Options / Locale</strong>, enable <strong>Show Local Weather</strong>,
+					fill <strong>Location</strong> field, enable <strong>Current Weather</strong> and/or set <strong>Forecast Length</strong> to at least 1.</p>
+					<p>Weather reports are provided by a 3rd party service - <a href="http://openweathermap.org/">openweathermap.org</a>. Unfortunately,
+					<strong>they cannot provide 100% availability to their service</strong>. That means, that sometimes you can notice
+					that your current weather or forecast is not showing even if you have it enabled in Theme Options.
+					You can fix it by clearing the weather cache.</p>
+					<h4>Clearing Weather Cache</h4>
+					<p>Go to <strong>Theme Options / Locale</strong> and set <strong>Weather Data Update Interval</strong> to 0. Save your settigns and open front-end
+					of your site. <strong>Start refreshing your page</strong> until you see correct weather info in <strong>LSVR Locale Widget</strong>.
+					Now go back to <strong>Theme Options / Locale</strong> and set <strong>Weather Data Update Interval</strong> to previous value.
+					Please note, that any 3rd party caching plugins (like W3 Total Cache) may interfere with this process, so clear the cache after each save of Theme Options.</p>
+					<h4>Increasing Availability</h4>
+					<p>You can register on <a href="http://openweathermap.org/">openweathermap.org</a> to get your API key. Insert this key
+					under <strong>Theme Options / Locale</strong> into <strong>Openweathermap.org API Key</strong> field.</p>
+					<p>You can also try to disable the caching by setting <strong>Weather Data Update Interval</strong> to 0 under <strong>Theme Options / Locale</strong></p>
+
+
+				</section>
+				<!-- HOW TO : end -->
+
+				<hr class="m-large">
+
+				<!-- CREDITS : begin -->
+				<section id="credits">
+
+					<h2>Credits</h2>
+
+					<p><strong>Images seen in preview are NOT included</strong>. You can purchase your own licenses on PhotoDune.net:</p>
+					<p>
+					<a href="http://photodune.net/item/aerial-view-of-rural-vermont-town/4810417">http://photodune.net/item/aerial-view-of-rural-vermont-town/4810417</a><br>
+					<a href="http://photodune.net/item/fall-foliage-behind-a-rural-vermont-church/4810393">http://photodune.net/item/fall-foliage-behind-a-rural-vermont-church/4810393</a><br>
+					<a href="http://photodune.net/item/portraits-of-multiethnic-mixed-occupations-people/8796817">http://photodune.net/item/portraits-of-multiethnic-mixed-occupations-people/8796817</a><br>
+					<a href="http://photodune.net/item/aerial-view-of-rural-vermont-town/4810414">http://photodune.net/item/aerial-view-of-rural-vermont-town/4810414</a><br>
+					<a href="http://photodune.net/item/rock-concert/277307">http://photodune.net/item/rock-concert/277307</a><br>
+					<a href="http://photodune.net/item/rock-concert/4113132">http://photodune.net/item/rock-concert/4113132</a><br>
+					<a href="http://photodune.net/item/red-theatre-curtains/6730675">http://photodune.net/item/red-theatre-curtains/6730675</a><br>
+					<a href="http://photodune.net/item/audience-at-the-conference-hall/9347305">http://photodune.net/item/audience-at-the-conference-hall/9347305</a><br>
+					<a href="http://photodune.net/item/group-of-people-running/9347387">http://photodune.net/item/group-of-people-running/9347387</a><br>
+					<a href="http://photodune.net/item/at-cinema/2656824">http://photodune.net/item/at-cinema/2656824</a><br>
+					<a href="http://photodune.net/item/country-barn-on-an-autumn-afternoon/5011130">http://photodune.net/item/country-barn-on-an-autumn-afternoon/5011130</a><br>
+					<a href="http://photodune.net/item/old-weathered-barn-in-stowe-vermont/4739304">http://photodune.net/item/old-weathered-barn-in-stowe-vermont/4739304</a><br>
+					<a href="http://photodune.net/item/aerial-view-of-fall-foliage-in-stowe-vermont/7060529">http://photodune.net/item/aerial-view-of-fall-foliage-in-stowe-vermont/7060529</a><br>
+					<a href="http://photodune.net/item/three-rural-homes-with-white-picket-fences/4748479">http://photodune.net/item/three-rural-homes-with-white-picket-fences/4748479</a><br>
+					<a href="http://photodune.net/item/county-courthouse-rural-america/2946099">http://photodune.net/item/county-courthouse-rural-america/2946099</a><br>
+					<a href="http://photodune.net/item/small-town-main-street-shops/8185059">http://photodune.net/item/small-town-main-street-shops/8185059</a><br>
+					<a href="http://photodune.net/item/soccer-player-legs-dribbling-in-a-match/4661502">http://photodune.net/item/soccer-player-legs-dribbling-in-a-match/4661502</a><br>
+					<a href="http://photodune.net/item/happy-school-children-playing-tug-of-war-with-rope-in-park/3284694">http://photodune.net/item/happy-school-children-playing-tug-of-war-with-rope-in-park/3284694</a><br>
+					<a href="http://photodune.net/item/rock-musicians-playing-at-a-live-concert/2288767">http://photodune.net/item/rock-musicians-playing-at-a-live-concert/2288767</a><br>
+					<a href="http://photodune.net/item/seats-in-an-empty-theatre/4021302">http://photodune.net/item/seats-in-an-empty-theatre/4021302</a><br>
+					<a href="http://photodune.net/item/fall-foliage-on-mt-mansfield-in-stowe-vermont-usa/5011128">http://photodune.net/item/fall-foliage-on-mt-mansfield-in-stowe-vermont-usa/5011128</a><br>
+					<a href="http://photodune.net/item/books/4980193">http://photodune.net/item/books/4980193</a><br>
+					<a href="http://photodune.net/item/old-farm-tractor-in-a-field/4810415">http://photodune.net/item/old-farm-tractor-in-a-field/4810415</a><br>
+					<a href="http://graphicriver.net/item/mountain-peak-flyer/9407610">http://graphicriver.net/item/mountain-peak-flyer/9407610</a><br>
+					</p>
+
+				</section>
+				<!-- CREDITS : end -->
+
+			</div>
+			<!-- CONTENT : end -->
+
+		</div>
+		<!-- CORE : end -->
+
+	</div>
+	<!-- WRAPPER : end -->
+
+    <script type="text/javascript" src="library/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="library/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="library/js/scripts.js"></script>
+
+    </body>
+</html>

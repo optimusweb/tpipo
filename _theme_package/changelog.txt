@@ -1,0 +1,455 @@
+v1.3.7
+
+Updated Visual Composer to 4.12
+
+Changed files: style.css, style.scss, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip
+
+------------------------------
+
+v1.3.6
+
+Updated FontAwesome to 4.6.3
+
+Various small fixes
+
+Changed files: style.css, style.scss, library/fonts, library/css/import/font-awesome.scss, library/css/import/font-awesome.css, includes/tgm-plugin-settings.php, includes/plugins/redux-framework.zip
+
+------------------------------
+
+v1.3.5
+
+Fixed issues with LSVR Galleries widget
+
+Updated LSVR Toolkit (TownPress) plugin to 1.2.0
+
+Changed files: style.css, style.scss, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.3.4
+
+Linked image in LSVR Image widget can now be set to open in new tab
+
+Updated LSVR Toolkit (TownPress) plugin to 1.1.9
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.3.3
+
+Added comments support for Events, Notices and Pages
+
+More button in LSVR Events widget will link to a category archive if category is defined
+
+Updated Visual Composer to 4.11.2.1
+
+Updated LSVR Toolkit (TownPress) plugin to 1.1.8
+
+Updated Redux Framework to 3.6.0.1
+
+Updated FontAwesome to 4.6.1
+
+Various small fixes
+
+Changed files: style.css, style.scss, library/fonts, library/css/import/font-awesome.scss, library/css/import/font-awesome.css, archive-lsvrevent.php, archive-lsvrnotice.php, page.php, single-lsvrnotice.php, single-lsvrevent.php, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip, includes/plugins/lsvr-toolkit-townpress.zip, includes/plugins/redux-framework.zip
+
+------------------------------
+
+v1.3.2
+
+Updated Visual Composer to 4.11.2
+
+Updated LSVR Toolkit (TownPress) plugin to 1.1.7
+
+Added wider range of options for Number of posts field in Articles element
+
+Various small fixes
+
+Changed files: style.css, style.scss, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.3.1
+
+Fixed an issue with admin bar overlapping the header on front-end
+
+Changed files: style.css, style.scss, functions.php
+
+------------------------------
+
+v1.3.0
+
+Updated Visual Composer to 4.11.1
+
+Updated LSVR Toolkit (TownPress) plugin to 1.1.6
+
+Various small fixes
+
+Changed files: style.css, style.scss, rtl.css, header.php, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip, includes/plugins/lsvr-toolkit-townpress.zip, includes/plugins/redux-framework.zip
+
+------------------------------
+
+v1.2.9
+
+Added Notices element into Visual Composer
+
+Fixed compatibility with Contact Form 7 4.4
+
+Fixed bugs with default comment form
+
+Better compatibility with 3rd party plugins - this fix required change of almost all default .php files in theme's root. So if you are using Child Theme where you are overriding any of those .php files, please copy them from Parent theme and make your changes again. Basically, the DIV with ID "core" and DIV with class "c-container" were moved from default files like index.php, page.php, 404.php, search.php and all "archive-" and "single-" .php into header.php and footer.php. Please see the complete changelog for list of all affected files. If you are not using Child theme or you've never copied any .php file from Parent theme to your Child theme, just ignore this message.
+
+Updated Articles element so you can highlight more than just first post - please check your settings for this element
+
+Updated LSVR Toolkit (TownPress) plugin to 1.1.5
+
+Various small fixes
+
+Changed files: style.css, style.scss, languages, rtl.css, library/css/skin, library/js/scripts.js, library/js/scripts.min.js, library/js/library.js, library/js/library.min.js, header.php, footer.php, index.php, page.php, 404.php, comments.php, search.php, bbpress.php, archive-lsvrdocument.php, archive-lsvrevent.php, archive-lsvrgallery.php, archive-lsvrnotice.php, single-lsvrdocument.php, single-lsvrevent.php, single-lsvrgallery.php, single-lsvrnotice.php, includes/redux/options-config.php, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.2.8
+
+Fixed issue with custom page titles
+
+Changed files: style.css, style.scss, components/page-header.php
+
+------------------------------
+
+v1.2.7
+
+Added Events element into Visual Composer
+
+Added category filter into LSVR Events widget
+
+Updated Visual Composer to 4.10
+
+Updated LSVR Toolkit (TownPress) plugin to 1.1.4
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, 404.php, components/page-header.php, languages/en_GB.mo, languages/en_GB.po, library/css/skin, includes/lsvr-functions.php, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.2.6
+
+Added options to enable displaying author on Post and Notice details
+
+Updated Redux Framework to 3.5.9
+
+Changed files: style.css, style.scss, rtl.css, article.php, single-lsvrnotice.php, includes/redux/options-config.php, includes/tgm-plugin-settings.php, includes/plugins/redux-framework.zip
+
+------------------------------
+
+v1.2.5
+
+Fixed Category bug and added "list all" option for LSVR Documents, LSVR Galleries and LSVR Notices widgets
+
+Updated LSVR Toolkit (TownPress) plugin to 1.1.3
+
+Updated Visual Composer to 4.9.2
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, library/js/library.min.js, library/js/library.js, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip, includes/plugins/js_composer.zip
+
+------------------------------
+
+v1.2.4
+
+Fixed issue with alt text in Image element added via Visual Composer
+
+Fixed incorrect date issue in LSVR Locale Info widget
+
+Updated LSVR Toolkit (TownPress) plugin to 1.1.2
+
+Various small fixes
+
+Changed files: style.css, style.scss, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.2.3
+
+Fixed issue with document title
+
+Updated Visual Composer to 4.9.1
+
+Changed files: style.css, style.scss, functions.php, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip
+
+------------------------------
+
+v1.2.2
+
+Fixed an issue with background image for post and document archives
+
+Fixed an issue with order of documents in documents archive
+
+Changed files: style.css, style.scss, header.php, functions.php
+
+------------------------------
+
+v1.2.1
+
+Updated Visual Composer to 4.9
+
+Updated FontAwesome icons to 4.5.0
+
+Updated TGM Activation Class to 2.5.2
+
+Changed files: style.css, style.scss, library/fonts, library/css/import/font-awesome.scss, library/css/import/font-awesome.css, includes/tgm-plugin-activation.class.php, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip, 
+
+------------------------------
+
+v1.2.0
+
+Added Documents element into Visual Composer
+
+Updated LSVR Toolkit (TownPress) plugin to 1.1.1
+
+Various small fixes
+
+Changed files: style.css, style.scss, library/css/skin, includes/redux/metaboxes/extension_metaboxes.php, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.1.9
+
+Updated Visual Composer to 4.8.1
+
+Updated FontAwesome icons to 4.4.0
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, library/fonts, library/css/import/font-awesome.scss, library/css/import/font-awesome.css, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip, includes/visual-composer-settings.php
+
+------------------------------
+
+v1.1.8
+
+Updated Visual Composer to 4.8.0.1
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, library/js/scripts.min.js, library/js/scripts.js, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip
+
+------------------------------
+
+v1.1.7
+
+Updated Redux Framework to 3.5.8.1
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, ajax/local-weather.php, components/visualcomposer/layouts/bbpress-lost-password.php, includes/tgm-plugin-settings.php, includes/plugins/redux-framework.zip
+
+------------------------------
+
+v1.1.6
+
+Updated Visual Composer to 4.7.4
+
+Updated LSVR Toolkit (TownPress) plugin to 1.1.0
+
+Image captions for images in gallery are now displayed in lightbox
+
+Various small fixes
+
+Changed files: style.css, style.scss, rtl.css, library/css/skin, includes/lsvr-walker-comment.class.php, components/pagination.php, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.1.5
+
+Updated Visual Composer to 4.7.2
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, archive-lsvrgallery.php, library/js/scripts.js, library/js/scripts.min.js, library/js/third-party.js, components/breadcrumbs.php, includes/visual-composer-settings.php, includes/redux/options-config.php, includes/tgm-plugin-settings.php
+
+------------------------------
+
+v1.1.4
+
+Updated Visual Composer to 4.7
+
+Updated LSVR Toolkit (TownPress) plugin to 1.0.9
+
+Updated Redux Framework to 3.5.7
+
+Various small fixes
+
+Changed files: style.css, style.scss, header.php, functions.php, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip, includes/plugins/js_composer.zip, includes/plugins/redux-framework.zip
+
+------------------------------
+
+v1.1.3
+
+Fixed issue with date picker when editing Event post type
+
+Changed files: style.css, style.scss, includes/redux/extensions/datetime
+
+------------------------------
+
+v1.1.2
+
+WP 4.3 compatibility fixes
+
+Updated LSVR Toolkit (TownPress) plugin to 1.0.8
+
+Changed files: style.css, style.scss, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip,
+
+------------------------------
+
+v1.1.1
+
+Updated Visual Composer to 4.6.2
+
+Updated LSVR Toolkit (TownPress) plugin to 1.0.7
+
+Updated Visual Composer to 3.5.6.1
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip, includes/plugins/js_composer.zip, includes/plugins/resux-framework.zip
+
+------------------------------
+
+v1.1.0
+
+Fixed the bug if Front page displays under Settings / Reading was set to Your latest posts. Now you will be able to set a Base page for Posts under Theme Options / Standard Posts. Page Settings of that page will now control sidebars of your post list.
+
+Updated LSVR Toolkit (TownPress) plugin to 1.0.6
+
+Various small fixes
+
+Changed files: style.css, style.scss, components/breadcrumbs.php, includes/lsvr-functions.php, includes/redux/options-config.php, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.0.9
+
+Updated LSVR Toolkit (TownPress) plugin to 1.0.5
+
+Various small fixes
+
+Changed files: style.css, style.scss, functions.php, includes/tgm-plugin-settings.php, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.0.8
+
+Category description for all post types is now displayed at the top of item list (if defined)
+
+Updated LSVR Toolkit (TownPress) plugin to 1.0.4
+
+Updated Visual Composer to 4.6.1
+
+Various small fixes
+
+Changed files: style.css, style.scss, archive-lsvrdocument.php, archive-lsvrnotice.php, archive-lsvrevent.php, archive-lsvgallery.php, index.php, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip, includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.0.7
+
+Fixed bug with header map
+
+Changed files: style.css, style.scss, rtl.css, header.php
+
+------------------------------
+
+v1.0.6
+
+Added Events archive. You can either enable link at the bottom of Event list via Theme Options / Events / Show Link To Archive option, or you can just paste "?archive=true" parameter to your Event list URL. For example: http://mydomain.com/events?archive=true
+
+Value field in Definition List shortcode, VC element and LSVR Definition List widget can now be hyperlinked
+
+Updated LSVR Toolkit (TownPress) plugin to 1.0.3
+
+Updated Visual Composer to 4.6
+
+Various small fixes
+
+Changed files: style.css, style.scss, archive-lsvrdocument.php, archive-lsvrevent.php, components/breadcrumbs.php, includes/redux/options-config.php, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip includes/plugins/lsvr-toolkit-townpress.zip
+
+------------------------------
+
+v1.0.5
+
+Added optional vertical main menu, which can be enabled either globally under Theme Options / Header Settings or separately for each page via its Page Settings
+
+Sidebar menu can be completely disabled, either globally or separately for each page via its Page Settings. This will also allow you to disable both sidebars and stretch content to full page width
+
+Various small fixes
+
+Changed files: style.css, style.scss, header.php, rtl.css, library/css/skin, components/page-content-after.php, components/page-content-before.php, includes/redux/options-config.php, includes/redux/meta-config.php
+
+------------------------------
+
+v1.0.4
+
+Added optional expiration date for documents. Expired documents will be shown in documents archive
+
+Documents can now be hosted on external URL
+
+You can now display uploader name, upload date and expiration date on Document list
+
+Added option to redirect user to home page after logging in (under Theme Options / Misc)
+
+Updated LSVR Toolkit (TownPress) plugin to 1.0.2
+
+Various small fixes
+
+Changed files: style.css, style.scss, archive-lsvrdocument.php, functions.php, single-lsvrdocument.php, components/breadcrumbs.php, includes/redux/meta-config.php, includes/redux/options-config.php, includes/tgm-plugin-settings.php, library/css/skin
+
+------------------------------
+
+v1.0.3
+
+Header login options were moved to Theme Options / Header Settings. You will have to re-enable it again if you want to use it
+
+Updated TGM Activation Class to 2.5.0
+
+Updated Visual Composer to 4.5.3
+
+Added some Schema.org microdata to Event detail page
+
+Various small fixes
+
+Changed files: style.css, style.scss, bbpress.php, functions.php, header.php, single-lsvrevent.php, wpml-config.xml, ajax/local-weather.php, library/css/skin, components/page-header.php, includes/lsvr-functions.php, includes/tgm-plugin-settings.php, includes/thm-plugin-activation.class.php, includes/plugins/js_composer.zip, includes/redux/options-config.php
+
+New files: library/js/library.min.js, library/js/scripts.min.js
+
+------------------------------
+
+v1.0.2
+
+Updated LSVR Toolkit (TownPress) to 1.0.1
+
+Changed files: style.css, style.scss, includes/plugins/lsvr-toolkit-townpress.php, includes/tgm-plugin-settings.php
+
+------------------------------
+
+v1.0.1
+
+Added bbPress support
+
+Updated Visual composer to 4.5.2
+
+Fixed various small issues
+
+Changed files: style.css, style.scss, footer.php, functions.php, header.php, searchform.php, components/breadcrumbs.php, components/page-header.php, components/sidebar-bottom.php, components/visual-composer-settings.php, includes/lsvr-functions.php, includes/tgm-plugin-settings.php, includes/plugins/js_composer.zip, includes/redux/options-config.php, includes/redux/meta-config.php, library/css/skin, library/js/scripts.js, wpml-config.xml
+
+New files: bbpress.php, components/visualcomposer/layouts/bbpress-lost-password.php, components/visualcomposer/layouts/bbpress-login-register.php
+
+------------------------------
+
+v1.0.0
+
+Initial themeForest release
